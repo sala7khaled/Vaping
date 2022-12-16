@@ -14,7 +14,6 @@ class ProductInteractor: ProductInteractorInterface {
     
     func getProducts(pageNum: Int) {
         
-        // Retrive from Cashing
         if ReachabilityManager.isOnline() {
             
             ProductRepo.shared.getProduct(pageNumber: pageNum) { [ weak self ] response in
@@ -30,6 +29,7 @@ class ProductInteractor: ProductInteractorInterface {
                 }
             }
             
+            // Retrive from Cashing
         } else if ProductRepo.shared.products != nil {
             output?.didGetProducts(response: ProductRepo.shared.products!)
         } else {
