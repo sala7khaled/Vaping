@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingController" customModule="Vaping" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="aUC-i5-adZ" id="Blb-LP-pUs"/>
+                <outlet property="collectionView" destination="4qi-ma-npu" id="ihz-xx-oeR"/>
+                <outlet property="pageControl" destination="LXg-tc-4Kh" id="QOJ-ae-AY9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4qi-ma-npu" customClass="IntrinsicCollectionView" customModule="Vaping" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="174" width="414" height="722"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="u5B-AM-hVo">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="sKC-2d-Dqr">
+                    <rect key="frame" x="64" y="685" width="286" height="113"/>
+                    <subviews>
+                        <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-tc-4Kh">
+                            <rect key="frame" x="99.5" y="0.0" width="87" height="37"/>
+                            <color key="pageIndicatorTintColor" name="Gray"/>
+                            <color key="currentPageIndicatorTintColor" name="Black"/>
+                        </pageControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUC-i5-adZ" customClass="AppButton" customModule="Vaping" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="61" width="286" height="52"/>
+                            <color key="backgroundColor" name="Gray"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="JF9-Po-gL4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="continue">
+                                <color key="titleColor" name="MainText"/>
+                            </state>
+                            <connections>
+                                <action selector="btnNextClicked:" destination="-1" eventType="touchUpInside" id="Awg-N8-hB0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="aUC-i5-adZ" firstAttribute="width" secondItem="sKC-2d-Dqr" secondAttribute="width" id="aeb-P4-A5R"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3f-3W-Re6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1I-d5-l22">
+                            <rect key="frame" x="0.0" y="91.5" width="414" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="Black"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="q1I-d5-l22" secondAttribute="trailing" id="1Tf-uu-UIc"/>
+                        <constraint firstAttribute="height" constant="150" id="6yH-fP-zB0"/>
+                        <constraint firstAttribute="bottom" secondItem="q1I-d5-l22" secondAttribute="bottom" constant="32" id="9ou-xs-kcw"/>
+                        <constraint firstItem="q1I-d5-l22" firstAttribute="leading" secondItem="L3f-3W-Re6" secondAttribute="leading" id="tWO-mr-dSI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4qi-ma-npu" firstAttribute="top" secondItem="L3f-3W-Re6" secondAttribute="bottom" constant="24" id="0HY-x9-tUd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sKC-2d-Dqr" secondAttribute="bottom" constant="64" id="3ow-W2-ePH"/>
+                <constraint firstItem="4qi-ma-npu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9s7-lY-Yzd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sKC-2d-Dqr" secondAttribute="trailing" constant="64" id="OH9-9p-HJe"/>
+                <constraint firstItem="4qi-ma-npu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OlY-Iz-fDJ"/>
+                <constraint firstAttribute="bottom" secondItem="4qi-ma-npu" secondAttribute="bottom" id="QAR-ki-ej9"/>
+                <constraint firstItem="L3f-3W-Re6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RaH-VY-VMI"/>
+                <constraint firstItem="L3f-3W-Re6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="awU-3K-wh2"/>
+                <constraint firstItem="L3f-3W-Re6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d2a-Ac-IkT"/>
+                <constraint firstItem="sKC-2d-Dqr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="tUU-bi-wtP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.81999999284744263" green="0.81999999284744263" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainText">
+            <color red="0.16099999845027924" green="0.17599999904632568" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

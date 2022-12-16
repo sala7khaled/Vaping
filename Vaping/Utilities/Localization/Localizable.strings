@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Vaping
+
+  Created by Salah Khaled on 15/12/2022.
+  Copyright © 2022 Salah Khaled. All rights reserved.
+*/
+
+// MARK: MAIN
+"app_name" = "Vaping";
+"ok" = "Ok";
+"cancel" = "Cancel";
+
+
+// MARK: ONBOARD
+"continue" = "Continue";
+"get_started" = "Get started";
+"value_proposition" = "Value Proposition #";
+
+"onboarding_title_1" = "Welcome";
+"onboarding_title_2" = "Charging your device";
+"onboarding_title_3" = "Fist puff";
+"onboarding_title_4" = "Using statistics";
+"onboarding_title_5" = "Device locator";
+"onboarding_title_6" = "Lock & Unlock";
+
+"onboarding_description_1" = "Welcome to Vaping app. This tutorial showing you how to use our vapor device.";
+"onboarding_description_2" = "Plug in device using the charger provided. Device will charge fully in under 20 minutes.";
+"onboarding_description_3" = "Make sure you have fully plugging in the vapor, and pressed the button.";
+"onboarding_description_4" = "You can keep eye and track all the vapor charging time and more.";
+"onboarding_description_5" = "Do not find your vapor? not a big deal, our app will locate it for you.";
+"onboarding_description_6" = "You can lock and unlock your vapor for more family safe.";
+
+
+// MARK: RESPONSE
+"no_internet_connection" = "No internet connection!";
+"something_went_worng" = "Something went worng!";
+"server_error" = "Server error!";
+"no_response_found" = "No response found!";
+"parsing_error" = "Parsing error!";
+"session_expired" = "Session expired!";
+
+
+// MARK: HOME
+"products_list" = "Products List";

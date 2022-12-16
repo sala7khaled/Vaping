@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingController" customModule="Vaping" customModuleProvider="target">
+            <connections>
+                <outlet property="indicatorLoading" destination="HCd-bK-eti" id="HOt-XI-xAs"/>
+                <outlet property="view" destination="NlY-hN-9T4" id="Oxm-er-1cD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NlY-hN-9T4">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOx-8Z-YLE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tnb-RN-YHa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-uB-YSD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrb-Tg-8Es">
+                    <rect key="frame" x="162" y="403" width="90" height="90"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="HCd-bK-eti">
+                            <rect key="frame" x="26.5" y="26.5" width="37" height="37"/>
+                            <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="HCd-bK-eti" firstAttribute="centerY" secondItem="zrb-Tg-8Es" secondAttribute="centerY" id="b6k-31-ng7"/>
+                        <constraint firstItem="HCd-bK-eti" firstAttribute="centerX" secondItem="zrb-Tg-8Es" secondAttribute="centerX" id="mzZ-l0-VyA"/>
+                        <constraint firstAttribute="width" constant="90" id="sA3-do-Xrg"/>
+                        <constraint firstAttribute="height" constant="90" id="ubf-0x-tvj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.39619006849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zrb-Tg-8Es" firstAttribute="centerX" secondItem="NlY-hN-9T4" secondAttribute="centerX" id="32o-Rw-uiz"/>
+                <constraint firstItem="HOx-8Z-YLE" firstAttribute="trailing" secondItem="ia7-lT-b1T" secondAttribute="trailing" id="UGv-Ec-KoO"/>
+                <constraint firstItem="HOx-8Z-YLE" firstAttribute="leading" secondItem="ia7-lT-b1T" secondAttribute="leading" id="XAh-AX-e4t"/>
+                <constraint firstAttribute="bottom" secondItem="PeH-uB-YSD" secondAttribute="bottom" id="ajE-Ai-fC1"/>
+                <constraint firstItem="ia7-lT-b1T" firstAttribute="trailing" secondItem="PeH-uB-YSD" secondAttribute="trailing" id="blZ-P0-IMZ"/>
+                <constraint firstItem="PeH-uB-YSD" firstAttribute="top" secondItem="NlY-hN-9T4" secondAttribute="top" id="c99-Mw-S2D"/>
+                <constraint firstAttribute="bottom" secondItem="HOx-8Z-YLE" secondAttribute="bottom" id="f2K-Bp-oDH"/>
+                <constraint firstItem="HOx-8Z-YLE" firstAttribute="top" secondItem="NlY-hN-9T4" secondAttribute="top" id="oww-BE-trU"/>
+                <constraint firstItem="zrb-Tg-8Es" firstAttribute="centerY" secondItem="NlY-hN-9T4" secondAttribute="centerY" id="tf6-Kd-6bl"/>
+                <constraint firstItem="PeH-uB-YSD" firstAttribute="leading" secondItem="ia7-lT-b1T" secondAttribute="leading" id="ucf-rG-c3Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ia7-lT-b1T"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>
