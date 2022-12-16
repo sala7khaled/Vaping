@@ -302,7 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				ADF8A2C8294B999900763DD7 /* App */,
-				ADF8A29E294B999400763DD7 /* Local */,
 				ADF8A27C294B999400763DD7 /* Network */,
 				ADF8A2A4294B999400763DD7 /* Repos */,
 			);
@@ -432,13 +431,6 @@
 				ADF8A29D294B999400763DD7 /* ProductService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		ADF8A29E294B999400763DD7 /* Local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		ADF8A2A4294B999400763DD7 /* Repos */ = {
