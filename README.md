@@ -1,5 +1,5 @@
 # Vaping
-Vaping app for showing tutorials (Onboarding) and product list.
+Vaping app for showing tutorials (Onboarding) and product list using UICollectionView for both Onboarding and Products list.
 
 ## Author
 Created by **Salah Khaled** on 2022. Copyright © 2022: [Linkedin](Https://www.linkedin.com/in/sala7khaled/)
